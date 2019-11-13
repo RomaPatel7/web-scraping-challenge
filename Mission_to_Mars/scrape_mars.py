@@ -16,7 +16,7 @@ def init_browser():
 # ***************************************************************************
 
 
-def mars_news_function():
+def scrape():
 
     browser = init_browser()
 
