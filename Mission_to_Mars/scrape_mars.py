@@ -4,12 +4,13 @@ import time
 import pandas as pd
 
 
-def init_browser():
-    # @NOTE: Replace the path with your actual path to the chromedriver
-    executable_path = {"executable_path": "/usr/local/bin/chromedriver"}
-    return Browser("chrome", **executable_path, headless=False)
+# def init_browser():
+#     # @NOTE: Replace the path with your actual path to the chromedriver
+#     executable_path = {"executable_path": "/usr/local/bin/chromedriver"}
+#     return Browser("chrome", **executable_path, headless=False)
 
-
+    executable_path = {'executable_path': "chromedriver"}
+    browser = Browser('chrome', **executable_path, headless=False)
 
 # ***************************************************************************
 # NASA Mars News
@@ -19,8 +20,6 @@ def init_browser():
 def scrape():
 
     browser = init_browser()
-
-   
 
     # Set Up for NASA Mars News
     url_Mars_News = "https://mars.nasa.gov/news/"
