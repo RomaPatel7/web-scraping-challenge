@@ -4,10 +4,17 @@ import time
 import pandas as pd
 
 
+<<<<<<< HEAD
 # def init_browser():
 #     # @NOTE: Replace the path with your actual path to the chromedriver
 #     executable_path = {"executable_path": "/usr/local/bin/chromedriver"}
 #     return Browser("chrome", **executable_path, headless=False)
+=======
+def init_browser():
+    executable_path = {"executable_path": "/usr/local/bin/chromedriver"}
+    return Browser("chrome", **executable_path, headless=False)
+
+>>>>>>> 5013fce2c60582b969cc5af41d4e3e64d58c480b
 
     executable_path = {'executable_path': "chromedriver"}
     browser = Browser('chrome', **executable_path, headless=False)
