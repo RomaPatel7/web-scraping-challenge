@@ -5,14 +5,14 @@ import pandas as pd
 
 
 def init_browser():
-    # @NOTE: Replace the path with your actual path to the chromedriver
+    #NOTE: Replace the path with your actual path to the chromedriver
     #Mac Users
-    #executable_path = {'executable_path': '/usr/local/bin/chromedriver'}
-    #return Browser('chrome', **executable_path, headless=False)
+    executable_path = {'executable_path': '/usr/local/bin/chromedriver'}
+    return Browser('chrome', **executable_path, headless=False)
 
     #Windows Users
-    executable_path = {'executable_path': "chromedriver"}
-    browser = Browser('chrome', **executable_path, headless=False)
+    #executable_path = {'executable_path': "chromedriver"}
+    #browser = Browser('chrome', **executable_path, headless=False)
 
 # ***************************************************************************
 # NASA Mars News
