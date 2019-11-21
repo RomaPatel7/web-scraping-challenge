@@ -55,7 +55,7 @@ def scrape():
 
     news_p = details_list[0]
 
-    news_dict = {"Headline": news_title,"Details": news_p}
+    news_dict = {"news_title": news_title, "news_p": news_p}
 
     return news_dict 
 
@@ -121,9 +121,9 @@ def Weather_function():
         weather_info_list.append(weather_info.text)
 
     # Variable for latest Mars Information
-    Latest_Mars_Weather = weather_info_list[0]
+    mars_weather = weather_info_list[0]
 
-    mars_weather_dict = {"mars_weather": Latest_Mars_Weather }
+    mars_weather_dict = {"mars_weather": mars_weather}
 
     return mars_weather_dict
 
